@@ -1,0 +1,8 @@
+.container{
+   text-align: center
+}
+.text{
+    text-align: center;
+    display: inline;
+    width: 500px;
+}
