@@ -1,7 +1,10 @@
-.container{
-  
-}
+Ç
 .text{
     text-align: center;
    
+}
+.text-block{
+    display: inline-block;
+    width: 500px;
+    text-align: center;
 }
