@@ -1,18 +1,24 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
-  height: 100vh;
+  height: 800px;
+  width: 800px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.container div:nth-child(even) {
+  flex-direction: row-reverse;
 }
 .box {
   width: 100px;
   height: 100px;
-  background-color: gold;
-  border: 3px solid gray;
-  margin-top: 30px;
+  background-color: burlywood;
 }
-.container div:nth-child(odd){
-    align-self: flex-start; 
-    background-color: lightcoral;
+
+.row div:nth-child(odd) {
+  background-color: black;
 }
