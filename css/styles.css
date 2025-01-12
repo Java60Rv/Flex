@@ -1,24 +1,29 @@
-.container {
+body{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  height: 800px;
-  width: 800px;
+ 
 }
-.row {
+.cell{
+  width: 70px;
+  height: 70px;
+  border: 1px solid lightgray;
+  background-color:rgb(237, 247, 247);
+  box-sizing: border-box;
+}
+.chessBoard{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.row{
   display: flex;
   flex-direction: row;
 }
-.container div:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: burlywood;
-}
-
-.row div:nth-child(odd) {
+.chessBoard div:nth-child(odd) div:nth-child(odd){
   background-color: black;
 }
+.chessBoard div:nth-child(even) div:nth-child(even){
+  background-color: black;
+}
+
